@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
+import calculate from '../logic/calculate';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+ 
+  handleClick(e) {
+    this.setState((state) => calculate(state, e.target.innerText));
   }
 
   render() {
@@ -88,12 +97,16 @@ class Calculator extends Component {
     return (
       <>
         <section className="container p-5">
-          <div className="w-100 result">0</div>
+          <div className="w-100 result">{next || total || 0}</div>
           <section className="grid-container m-0 p-0">
             {items.map((item, index) => (
-              <div key={item.id} className={`grid-item item${index + 1}`}>
+              <button type="button"
+              key={item.id}
+              className={`grid-item item${index + 1}`}
+              onClick={this.handleClick}
+              >
                 {item.text}
-              </div>
+              </button>
             ))}
           </section>
         </section>
