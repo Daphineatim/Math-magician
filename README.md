@@ -20,6 +20,15 @@ Coming soon....
 - Node package. [Link to download node](https://nodejs.org/en/download/)
 
 ## Getting started
+
+## Getting Started
+To use the above project you need to meet the following requirements:
+
+- Have [Vscode](https://code.visualstudio.com/) installed 
+- Have [Git](https://git-scm.com/) installed
+- Have the latest version of node
+- Have npm installed
+
 to run the project locally, clone the project using the command
 `git clone https://github.com/Daphineatim/Math-magician.git`
 
@@ -47,3 +56,7 @@ Give a ⭐️ if you like this project!
 - My standup team
 - Microverse team
 - My family's support
+
+### 📝 License
+
+This project is MIT licensed.
