@@ -98,7 +98,6 @@ class Calculator extends Component {
     ];
 
     const { total, next, operation } = this.state;
-    console.log(operation);
     return (
       <>
         <section className="container p-5">
