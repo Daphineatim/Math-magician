@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import Calculator from './components/Calculator';
 
 class App extends React.Component {
