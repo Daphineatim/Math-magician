@@ -12,7 +12,7 @@
 - Babel
 
 ## Live Demo
-Coming soon....
+https://melodic-basbousa-cbc1ab.netlify.app/
 
 ### Prerequisites
 - Good knowledge on javascript objects
